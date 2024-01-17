@@ -1,0 +1,17 @@
+---
+  - name: sample playbook
+    hosts: localhost
+    connection: local
+    gather_facts: false
+    tasks:
+      - name: Search for incident assigned to group, return specific fields
+        servicenow.servicenow.snow_record_find:
+            username: "{{ sn_user }}
+            password: "{{ sn_pass }}"
+            instance: "{{ sn_instance }}"
+            table: incident
+            query:
+               assignment_group: "{{ assigment_group }}"
+            return_fields:
+               - number
+               - opened_at
