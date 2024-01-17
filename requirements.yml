@@ -1,0 +1,4 @@
+---
+  - collections:
+        - name: servicenow.servicenow
+          src: https://galaxy.wipro.com
