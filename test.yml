@@ -4,6 +4,7 @@
     connection: local
     gather_facts: false
     tasks:
+      - command: whoami
       - shell: source /var/lib/awx/venv/awx/bin/activate
       - name: Search for incident assigned to group, return specific fields
         servicenow.servicenow.snow_record_find:
