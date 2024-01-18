@@ -4,6 +4,7 @@
     connection: local
     gather_facts: false
     tasks:
+      - shell: source /var/lib/awx/venev/awx/bin/activate
       - name: Search for incident assigned to group, return specific fields
         servicenow.servicenow.snow_record_find:
             username: "{{ sn_user }}"
