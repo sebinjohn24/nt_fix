@@ -1,4 +1,5 @@
 ---
-  - collections:
-        - name: servicenow.servicenow
-          src: https://galaxy.wipro.com
+collections:
+  - servicenow.servicenow
+- name: servicenow.servicenow
+  src: https://galaxy.wipro.com
