@@ -6,7 +6,7 @@
     tasks:
       - name: Search for incident assigned to group, return specific fields
         servicenow.servicenow.snow_record_find:
-            username: "{{ sn_user }}
+            username: "{{ sn_user }}"
             password: "{{ sn_pass }}"
             instance: "{{ sn_instance }}"
             table: incident
